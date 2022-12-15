@@ -8,7 +8,7 @@ public class Flight2 : MonoBehaviour
     Rigidbody rb;
 
     float upForce;
-    float speed = 1.9f;
+    float speed = 2f;
 
     private void Awake()
     {
@@ -58,13 +58,54 @@ public class Flight2 : MonoBehaviour
 
     void moveUpandDown()
     {
+        if(Mathf.Abs(Input.GetAxis("Vertical")) > 0.2f || Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+        {
+            if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.LeftShift))
+            {
+                rb.velocity = rb.velocity;
+            }
+            if (!Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.Q)
+                && !Input.GetKey(KeyCode.E))
+            {
+                rb.velocity = new Vector3(
+                    rb.velocity.x, 
+                    Mathf.Lerp(rb.velocity.y, 0, Time.deltaTime * 5), 
+                    rb.velocity.z);
+                upForce = 2.81f;
+            }
+            if (!Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.Q)
+                && Input.GetKey(KeyCode.E)))
+            {
+                rb.velocity = new Vector3(
+                    rb.velocity.x,
+                    Mathf.Lerp(rb.velocity.y, 0, Time.deltaTime * 5),
+                    rb.velocity.z);
+                upForce = 1.10f;
+            }
+            if(Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.E))
+            {
+                upForce = 4.10f;
+            }
+        }
+
+        if(Mathf.Abs(Input.GetAxis("Vertical")) < 0.2f && Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+        {
+            upForce = 1.35f;
+        }
+
         if (Input.GetKey(KeyCode.Space))
         {
             upForce = 10 * speed;
+            if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+            {
+                upForce = 5;
+            }
         } else if (Input.GetKey(KeyCode.LeftShift))
         {
             upForce = 0;
-        } else
+        } else if(!Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftShift)
+            && (Mathf.Abs(Input.GetAxis("Vertical")) < 0.2f 
+            && Mathf.Abs(Input.GetAxis("Horizontal")) < 0.2f))
         {
             upForce = 9.81f;
         }
@@ -101,7 +142,7 @@ public class Flight2 : MonoBehaviour
         currentrotation = Mathf.SmoothDamp(currentrotation, rotationY, ref rotationYVelocity, 0.25f);
     }
 
-    float SideMove = 2.5f;
+    float SideMove = 3f;
     float tiltsideways;
     float tiltvelocity;
     void swerve()

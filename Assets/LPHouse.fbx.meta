@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: fb379eddc4548914ba2c71fcdb14f946
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -2144848669175544852
+    second: 001.House|PlaneAction
+  - first:
+      74: 5871177935093126682
+    second: 001.House|PlaneAction.002
+  - first:
+      74: 6015738950530130801
+    second: 001.House|PlaneAction.004
+  - first:
+      74: 1663742388131934335
+    second: 001.House|PlaneAction.008
+  - first:
+      74: -5375197114677702425
+    second: 001.House|PlaneAction.010
+  - first:
+      74: 8981048452336357460
+    second: 001.House|PlaneAction.012
+  - first:
+      74: -6290672631081791590
+    second: 002.Roof|Plane.001Action
+  - first:
+      74: 8922208091106580298
+    second: 003.DoorFrame|PlaneAction
+  - first:
+      74: 814807056545291102
+    second: 003.DoorFrame|PlaneAction.002
+  - first:
+      74: -4248193147974355077
+    second: 003.DoorFrame|PlaneAction.004
+  - first:
+      74: 6059142930589709250
+    second: 003.DoorFrame|PlaneAction.008
+  - first:
+      74: -6900817320485911819
+    second: 003.DoorFrame|PlaneAction.010
+  - first:
+      74: 8479974331523794312
+    second: 003.DoorFrame|PlaneAction.012
+  - first:
+      74: -900367823728282194
+    second: 004.Door|PlaneAction
+  - first:
+      74: 7467481458671390711
+    second: 004.Door|PlaneAction.002
+  - first:
+      74: -6089340533552126749
+    second: 004.Door|PlaneAction.004
+  - first:
+      74: 5700559162890153883
+    second: 004.Door|PlaneAction.008
+  - first:
+      74: -5504830206681520746
+    second: 004.Door|PlaneAction.010
+  - first:
+      74: 3528820135318451086
+    second: 004.Door|PlaneAction.012
+  - first:
+      74: 1858402894147304200
+    second: 006.WindowPanel|PlaneAction
+  - first:
+      74: 7812953937204302505
+    second: 006.WindowPanel|PlaneAction.002
+  - first:
+      74: -891501437900453046
+    second: 006.WindowPanel|PlaneAction.004
+  - first:
+      74: 8137339084788456698
+    second: 006.WindowPanel|PlaneAction.008
+  - first:
+      74: -1942932589324148013
+    second: 006.WindowPanel|PlaneAction.010
+  - first:
+      74: -8256486822492532366
+    second: 006.WindowPanel|PlaneAction.012
+  - first:
+      74: -1038004193951965463
+    second: 007.WiondowStructure|PlaneAction
+  - first:
+      74: 8582256383464389215
+    second: 007.WiondowStructure|PlaneAction.002
+  - first:
+      74: 608339482402391806
+    second: 007.WiondowStructure|PlaneAction.004
+  - first:
+      74: -8118268485573612403
+    second: 007.WiondowStructure|PlaneAction.008
+  - first:
+      74: -5095973067729694437
+    second: 007.WiondowStructure|PlaneAction.010
+  - first:
+      74: -4191162463798310863
+    second: 007.WiondowStructure|PlaneAction.012
+  - first:
+      74: -4312394931903171446
+    second: 008.Chimney|PlaneAction
+  - first:
+      74: 6869603953175914749
+    second: 008.Chimney|PlaneAction.002
+  - first:
+      74: -4667547513796189563
+    second: 008.Chimney|PlaneAction.004
+  - first:
+      74: 9092483280153695480
+    second: 008.Chimney|PlaneAction.008
+  - first:
+      74: -280509478815746779
+    second: 008.Chimney|PlaneAction.010
+  - first:
+      74: 4787880639207562022
+    second: 008.Chimney|PlaneAction.012
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

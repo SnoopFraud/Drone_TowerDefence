@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    //var
     public Transform Drone;
+
+    int zoom = 20, normal = 60;
+    float smooth = 5;
+    bool isZoomed = false;
 
     private void Awake()
     {
@@ -16,6 +21,7 @@ public class CameraFollow : MonoBehaviour
     public float angle;
     private void FixedUpdate()
     {
+        //Camera Follow
         transform.position = Vector3.SmoothDamp(
             transform.position, 
             Drone.transform.TransformPoint(behindposition) + Vector3.up * Input.GetAxis("Vertical"), 
