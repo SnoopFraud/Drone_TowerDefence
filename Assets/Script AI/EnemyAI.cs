@@ -5,6 +5,11 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    //Var
+    public int 
+        currenthealth, 
+        maxhealth;
+
     public GameObject Goal;
     NavMeshAgent agent;
     public float jarak;
@@ -13,9 +18,11 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Goal = GameObject.FindGameObjectWithTag("Tujuan");
         agent = this.GetComponent<NavMeshAgent>();
-        this.agent.speed = 3f;
+        this.agent.speed = 10f;
         cariTarget = 1;
+        currenthealth = maxhealth;
     }
 
     // Update is called once per frame
@@ -33,6 +40,23 @@ public class EnemyAI : MonoBehaviour
             );
             if (jarak < 1) { cariTarget = 0; this.agent.speed = 0f; }
         }
-        if (jarak > 1) { cariTarget = 1; this.agent.speed = 3f; }
+        if (jarak > 1) { cariTarget = 1; this.agent.speed = 10f; }
+    }
+
+    public void takeDamage(int damage)
+    {
+        currenthealth -= damage;
+
+        if(currenthealth <= 0)
+        {
+            Death();
+        }
+    }
+
+    void Death()
+    {
+        Debug.Log("Enemy die");
+        gameObject.SetActive(false);
+        this.gameObject.tag = "Untagged";
     }
 }

@@ -25,11 +25,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2167273405535620135}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.018046899, y: 0.17148943, z: 0.10196277}
-  m_LocalScale: {x: 0.73037803, y: 0.63336504, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.0009530466, y: -0.006510526, z: -0.062037207}
+  m_LocalScale: {x: 0.7303781, y: 0.63336504, z: 1}
   m_Children: []
-  m_Father: {fileID: 8280686906375477312}
+  m_Father: {fileID: 7752370260185040139}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3426176726315305187
@@ -272,13 +272,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5246253746087244161}
   m_LocalRotation: {x: -0.12278855, y: -0.6963641, z: 0.6963641, w: 0.12278855}
-  m_LocalPosition: {x: 0.015504764, y: 0.2467633, z: 0.10196277}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_LocalPosition: {x: -0.003495289, y: 0.06876336, z: -0.062037207}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7987824921065417778}
   - {fileID: 2297811535284690008}
-  m_Father: {fileID: 8280686906375477312}
-  m_RootOrder: 2
+  m_Father: {fileID: 7752370260185040139}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6205097100342630242
 MeshFilter:
@@ -410,6 +410,38 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7437788393802305040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7752370260185040139}
+  m_Layer: 0
+  m_Name: Rotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7752370260185040139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7437788393802305040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.019, y: 0.178, z: 0.164}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 974788292723369763}
+  - {fileID: 2093866359309477111}
+  m_Father: {fileID: 8280686906375477312}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8764348415674761978
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8280686906375477312}
   - component: {fileID: 2063072967586104674}
+  - component: {fileID: 1543756413}
   m_Layer: 0
   m_Name: LPTurret
   m_TagString: Untagged
@@ -436,11 +469,10 @@ Transform:
   m_GameObject: {fileID: 8764348415674761978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.8773, y: 0.07, z: -5.1452}
-  m_LocalScale: {x: 3.1039, y: 3.1039, z: 3.1039}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children:
-  - {fileID: 974788292723369763}
+  - {fileID: 7752370260185040139}
   - {fileID: 1757678726693906164}
-  - {fileID: 2093866359309477111}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -451,7 +483,7 @@ NavMeshObstacle:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8764348415674761978}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Shape: 1
   m_Extents: {x: 0.1, y: 0.1, z: 0.1}
@@ -460,3 +492,23 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0.2}
   m_TimeToStationary: 0.5
+--- !u!114 &1543756413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8764348415674761978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f5ccae2d4e0734492abff32a93c72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canAtk: 0
+  enemytag: Enemy
+  attackrange: 21
+  target: {fileID: 0}
+  turretbarrel: {fileID: 7752370260185040139}
+  rotatespeed: 50
+  firerate: 0.5
+  atkdmg: 50

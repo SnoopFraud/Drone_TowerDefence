@@ -12,17 +12,15 @@ public class NavMeshAI : MonoBehaviour
     private void Start()
     {
         agen = this.GetComponent<NavMeshAgent>();
+        objektujuan = GameObject.FindGameObjectWithTag("Tujuan");
     }
     private void Update()
     {
-        objektujuan = GameObject.FindGameObjectWithTag("Tujuan");
         targetbaru = new Vector3(objektujuan.transform.position.x, 
             objektujuan.transform.position.y,
             objektujuan.transform.position.z);
 
         this.agen.destination = targetbaru;
-        agen.speed = 3f;
-
-        if(this.agen.remainingDistance < 0.5) { Destroy(objektujuan); }
+        agen.speed = 20f;
     }
 }

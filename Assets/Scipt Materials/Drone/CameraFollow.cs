@@ -7,28 +7,27 @@ public class CameraFollow : MonoBehaviour
     //var
     public Transform Drone;
 
-    int zoom = 20, normal = 60;
-    float smooth = 5;
-    bool isZoomed = false;
+    private Vector3 camerafollowspeed;
+    public Vector3 behindPos = new Vector3(0, 2, -4);
+    public float 
+        pos_lerp = 0.2f,
+        rotate_lerp = 0.1f;
 
     private void Awake()
     {
         Drone = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    Vector3 velocitycamera;
-    public Vector3 behindposition = new Vector3(0, 2, -4);
-    public float angle;
+    
     private void FixedUpdate()
     {
         //Camera Follow
         transform.position = Vector3.SmoothDamp(
             transform.position, 
-            Drone.transform.TransformPoint(behindposition) + Vector3.up * Input.GetAxis("Vertical"), 
-            ref velocitycamera, 0.1f
-            );
-        transform.rotation = Quaternion.Euler(
-            new Vector3(angle, Drone.GetComponent<Flight2>().currentrotation, 0)
-            );
+            Drone.transform.TransformPoint(behindPos) + Vector3.up,
+            ref camerafollowspeed,
+            pos_lerp);
+        //Camera Rotate
+        transform.rotation = Quaternion.Lerp(transform.rotation, Drone.rotation, rotate_lerp);
     }
 }

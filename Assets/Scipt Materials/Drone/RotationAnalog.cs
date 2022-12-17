@@ -4,19 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class AnalogFlight : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
+public class RotationAnalog : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    //var
-    public GameObject Objekgerak;
-    private Image 
+    public GameObject objekputar;
+    private Image
         Biggcircle,
         smallcircle;
     public Vector2 dir;
-    public float currentrotate;
-    public float 
+    public float
         offset = 2f,
         MaxSpeed = 5f,
-        rotationspeed = 1f,
         Zaxis;
 
     private void Start()
@@ -57,22 +54,16 @@ public class AnalogFlight : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
 
     private void Update()
     {
-        Zaxis = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
-    }
 
+    }
     private void FixedUpdate()
     {
-        ForwardMovement();
-        RotatePlayer();
-        //BackwardMovement();
+        RotationDrone();   
     }
 
-    void ForwardMovement()
+    public void RotationDrone()
     {
-        Objekgerak.transform.Translate(dir.x * MaxSpeed * Time.deltaTime, 0, dir.y * MaxSpeed * Time.deltaTime);
-    }
-    void RotatePlayer()
-    {
-        Objekgerak.transform.Rotate(0, Zaxis * Time.deltaTime * rotationspeed, 0);
+        Zaxis = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
+        objekputar.transform.eulerAngles = new Vector3(0, Zaxis, 0);
     }
 }
