@@ -1147,7 +1147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &908748981
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1583,7 +1583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebe6e1af7e4939d42b3079ac7bb7eb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameOver: 0
+  succeed: 0
   gameOverScreen: {fileID: 908748980}
+  succeedscreen: {fileID: 0}
 --- !u!4 &1345336857
 Transform:
   m_ObjectHideFlags: 0
@@ -1958,7 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currenthealth: 0
-  maxhealth: 0
+  maxhealth: 100
   Goal: {fileID: 5476378095084833632}
   jarak: 0
   cariTarget: 0
@@ -2884,6 +2887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LPHouse
       objectReference: {fileID: 0}
+    - target: {fileID: 8012679707086844390, guid: 7298cead6f3e155459845dd3fd52185c, type: 3}
+      propertyPath: m_TagString
+      value: Tujuan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7298cead6f3e155459845dd3fd52185c, type: 3}
 --- !u!1 &5476378095084833632 stripped
@@ -2916,3 +2923,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1900677a6b4e4ce49ae8ae59dc9fddd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  maxhealth: 0

@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 452849493}
   - component: {fileID: 452849492}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PLAY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,14 +194,14 @@ RectTransform:
   m_GameObject: {fileID: 452849490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66114, y: 0.66114, z: 0.66114}
   m_Children: []
   m_Father: {fileID: 984440869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33953127, y: 0.71672225}
   m_AnchorMax: {x: 0.588, y: 0.8416389}
-  m_AnchoredPosition: {x: 71.98999, y: -18.5}
+  m_AnchoredPosition: {x: 59.861023, y: -139.60103}
   m_SizeDelta: {x: -5.503662, y: 6.326172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452849492
@@ -257,7 +257,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Ai Arena
+          m_StringArgument: TowerDef
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &452849493
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a04a09e04552dfd4da134799a6b820a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed859d9e9a1a78a4d9e63be4e0f13e37, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -505,8 +505,8 @@ RectTransform:
   m_Children:
   - {fileID: 452849491}
   - {fileID: 1928170159}
-  - {fileID: 1996013863}
   - {fileID: 2086732050}
+  - {fileID: 1996013863}
   m_Father: {fileID: 1240548345}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -535,8 +535,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4cf3550e957f02a40b951d85e857f73d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 1928170161}
   - component: {fileID: 1928170160}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: ABOUT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,14 +747,14 @@ RectTransform:
   m_GameObject: {fileID: 1928170158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66114, y: 0.66114, z: 0.66114}
   m_Children: []
   m_Father: {fileID: 984440869}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33953127, y: 0.5194445}
   m_AnchorMax: {x: 0.588, y: 0.64586115}
-  m_AnchoredPosition: {x: 72.19995, y: -20.5}
+  m_AnchoredPosition: {x: 60, y: -69}
   m_SizeDelta: {x: -5.5773315, y: 2.3261719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928170160
@@ -833,7 +833,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c543971698a41b4d914116f54312979, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3c12c6d5cf5dac8469509570c892bdfd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 1996013865}
   - component: {fileID: 1996013864}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: QUIT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,14 +879,14 @@ RectTransform:
   m_GameObject: {fileID: 1996013862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66114, y: 0.66114, z: 0.66114}
   m_Children: []
   m_Father: {fileID: 984440869}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33953127, y: 0.14977778}
   m_AnchorMax: {x: 0.588, y: 0.27272224}
-  m_AnchoredPosition: {x: 68, y: -22}
+  m_AnchoredPosition: {x: 57.223022, y: 65.93097}
   m_SizeDelta: {x: 1.0097656, y: 7.326172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996013864
@@ -965,7 +965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5e8427e07cb55404eb2c8902dec4a4c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c78ee32ae7c9994d97f5eca93ab19eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -996,7 +996,7 @@ GameObject:
   - component: {fileID: 2086732052}
   - component: {fileID: 2086732051}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: CREDIT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1011,14 +1011,14 @@ RectTransform:
   m_GameObject: {fileID: 2086732049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66114, y: 0.66114, z: 0.66114}
   m_Children: []
   m_Father: {fileID: 984440869}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33953127, y: 0.3344167}
   m_AnchorMax: {x: 0.588, y: 0.45113894}
-  m_AnchoredPosition: {x: 71.91998, y: -25.5}
+  m_AnchoredPosition: {x: 59.814026, y: -2.8170319}
   m_SizeDelta: {x: -4.9902344, y: 16.326172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086732051
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 721032e5793afc044a71cbc0746b1a98, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fcd76e6282101eb4dbc03f3d3b4338e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
